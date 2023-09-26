@@ -9,32 +9,31 @@ function esPositivo(num) {
    // Si el número es 0, devuelve false.
     if (num > 0) {
       return ('Es positivo');
-    }else if (num < 0); {
+    }else(num < 0); {
       return ('Es negativo');
-    }if (num === 0) {
-      return(false);
+   }if (num === 0); {
+  return ('false');
     } 
-}      esPositivo(0);
+}      esPositivo(1);
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
-   return (str);
+    return (str + "!");
 }
-       agregarSimboloExclamacion('str!');
+       agregarSimboloExclamacion('hello word');
 
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
      return (nombre + apellido);
 }
-      combinarNombres("Juan ", "Esteban");
+      combinarNombres("Soy ", "Henry");
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
-   var saludo = ("Hola ") + nombre
-    return(saludo);
+   return ("Hola " + nombre);
 }
   obtenerSaludo("Martin");
 
@@ -49,16 +48,14 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
-    let perimetro=(lado * 4);
-    return ("el perimetro es: " + perimetro);
+    console.log(lado * 4);
 }
       retornarPerimetro(10);
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
-   var area=(base * altura)/2;
-     return (area);
+   console.log((base * altura)/2);
 }
      areaDelTriangulo(10, 15);
 
@@ -66,8 +63,7 @@ function areaDelTriangulo(base, altura) {
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
-   var dolares=(euro * 1.20);
-   return (euro + " Euros = " + dolares + " Dolares");
+   console.log(euro * 1.20);
 }      
    deEuroAdolar(10);
 
@@ -86,10 +82,10 @@ function deEuroAdolar(euro) {
          break;
          default:
          return ("Dato incorrecto");
-       }  if (letra.length !== " "); {
+       } if (letra.length>1); {
          return ("Dato incorrecto");
        }
-   }       esVocal("u");
+   }       esVocal("a");
    
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/

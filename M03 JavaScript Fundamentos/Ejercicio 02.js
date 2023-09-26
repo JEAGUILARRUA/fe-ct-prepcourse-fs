@@ -31,7 +31,7 @@ function multiplica(x, y) {
 
 function obtenerResto(x, y) {
    // Obten el resto de la división de "x" entre "y".
-   console.log(x % y);
+   return (x % y);
 }  obtenerResto(20, 4);
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
